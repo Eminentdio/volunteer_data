@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1462&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(56, 93, 204);
+    font-family: 'Tiro Kannada', serif;
+}
+p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-family: 'Nuosu SIL', serif;
+    color: aliceblue;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+main{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border: 20px solid whitesmoke;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+form{
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgba(253, 6, 6, 0.445);
+    font-family: 'Nuosu SIL', serif;
+    color: white;
+    font-size: 18px;
+    
+}
+form h1{
+    font-size: 3em;
+    color: rgb(3, 3, 66);
+}
+label{
+    font-size: 20px;
+    font-family: 'Nuosu SIL', serif; 
+}
+input[type = "text"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 20px;
+
+}
+input[type = "email"], select, input[type = "date"], input[type = "tel"], input[type = "date"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 20px;
+
+}
+label[for = "f-choice"]{
+    font-size: 24px;
+    font-family: 'Nuosu SIL', serif;
+    margin-top: 10px;
+}
+input[type = "checkbox"]{
+    max-width: 50%;
+    font-family: 'Nuosu SIL', serif;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+label[for = "question"]{
+    font-size: 30px;
+    font-family: 'Nuosu SIL', serif;
+    color: aliceblue;
+}
+textarea{
+    width: 100%;
+    height: auto;
+    border: 5px outset rgb(255, 255, 255);
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    outline: none;
+    padding: 10px;
+    margin-left: 25%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 24px;
+    color: brown;
+}
+
+button:hover{
+    background-color: rgb(6, 135, 221);
+    color: #ffff;   
+}
+
+/* Mobile view styling */
+
+@media screen and (max-width: 1000px) {
+    h1{
+        text-align: center;
+        color: rgb(240, 243, 202);
+        font-family: 'Tiro Kannada', serif;
+        font-size: 1.2em;
+    }
+    p{
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+        font-family: 'Nuosu SIL', serif;
+        color: aliceblue;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    main{
+        margin-top: 0;
+        padding: 5px;
+        border: none;
+    }
+    form{
+        padding: 15px;
+        border: 12px outset #f5f3f4;
+        background-color: rgba(5, 92, 173, 0.445);
+    }
+    
+    form h1{
+        font-size: 1.5em;
+        color: rgb(248, 248, 248);
+    }
+    input, label{
+        font-size: 18px;
+    }
+
+    label[for = "question"], label[for = "f-choice"]{
+        font-size: 18px;
+
+    }
+    label[for = "f-choice"]{
+        padding: 2px;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+        font-size: 14px;
+        padding: 10px;
+
+    }
+    button{
+        width: 60%;
+        height: 50px;
+        margin-left: 20%;
+
+    }
+    button:hover{
+        background-color: brown;
+        color: #ffff;
+    }
+}
